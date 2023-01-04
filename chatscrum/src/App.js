@@ -9,19 +9,16 @@ import Scrumboard from "./Components/scrumboard/scrumboard";
 class App extends React.Component {
   render() {
     return (
-      //linking components to eachother on the SPA
-      //Always wrap the code with browserrouter
+      // linking components to eachother on the SPA
+      // Always wrap the code with browserrouter
+      // always wrap the route with routes first because of the new react version update
       <BrowserRouter>
-        <div className="App">
-          {/* always wrap the route with routes first because of the new react
-          version update */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/scrumboard" element={<Scrumboard />} />
           </Routes>
-        </div>
       </BrowserRouter>
     );
   }
