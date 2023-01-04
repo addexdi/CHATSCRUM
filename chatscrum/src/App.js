@@ -16,7 +16,7 @@ class App extends React.Component {
           {/* always wrap the route with routes first because of the new react
           version update */}
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route index path="/" element={<Home />} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/scrumboard" element={<Scrumboard />} />
